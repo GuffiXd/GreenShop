@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenShop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./main.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <img src="./image/Group.svg" alt="Logo">
+
+            <nav class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <a href="#" class="text-black font-semibold">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Plant Care</a>
+                <a href="#">Blogs</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                    <div class="flex items-center space-x-4">
+                        <button><img src="./image/lupa.svg" alt="Search"></button>
+                        <button><img src="./image/Vector.svg" alt="Cart"></button>
+                        <button class="openModal flex bg-[#46A358] text-white px-4 py-2 rounded-lg">
+                            <img src="./image/Logout.svg" alt="Logout">
+
+                            Login
+                        </button>
+                    </div>
+            </div>
+    </header>А
+    <section class="container mx-auto flex flex-col md:flex-row items-center justify-between z-1 ">
+
+        <div class="md:w-1/2 text-left">
+            <h2 class="text-sm uppercase text-gray-500 text-[14px] mb-2">Welcome to Greenshop</h2>
+            <h1 class="font-boldss text-[70px] mt-4 font-bold">
+                LET'S MAKE <br class="hidden md:block mt-2"> A BETTER <span class="text-[#46A358]">PLANET</span>
+            </h1>
+            <p class="text-gray-600 mb-6 text-[14px]">
+                We are an online plant shop offering a wide range of cheap and trendy plants.  
+                Use our plants to create a unique Urban Jungle. Order your favorite plants!
+            </p>
+            <button class="font-bold bg-[#46A358] text-white px-6 py-3 rounded-lg">
+                SHOP NOW
+            </button>
+        </div>
+    
+
+        <div class="md:w-1/2 flex justify-center mt-6 md:mt-0 md:ml-6">
+            <img src="./image/01.png" alt="Plant Image" class=" h-auto">
+        </div>
+    </section>
+    <div class="container mx-auto flex flex-col md:flex-row gap-6 px-6">
+        <aside class="w-full md:w-1/4 bg-white p-4">
+            <h2 class="text-lg font-semibold mb-4">Categories</h2>
+            <ul class="space-y-2">
+                <li class="text-green-600 font-bold">House Plants</li>
+                <li class="text-gray-600">Potter Plants</li>
+                <li class="text-gray-600">Seeds</li>
+                <li class="text-gray-600">Small Plants</li>
+                <li class="text-gray-600">Big Plants</li>
+                <li class="text-gray-600">Succulents</li>
+                <li class="text-gray-600">Trerrariums</li>
+                <li class="text-gray-600">Accessories</li>
+            </ul>
+            <h2 class="mt-6 text-lg font-semibold">Price Range</h2>
+            <input type="range" class="w-full mt-2" min="39" max="1230">
+            <button class="w-full bg-green-600 text-white py-2 mt-3 rounded">Filter</button>
+            <h2 class="text-lg font-semibold mb-4">Size</h2>
+            <ul class="space-y-2">
+                <li class="text-green-600 font-bold">Small</li>
+                <li class="text-gray-600">Medium</li>
+                <li class="text-gray-600">Large</li>
+            </ul>
+            <div class="mt-6 bg-green-100 p-4 rounded-xl text-center">
+                <img src="./image/Sale.png" alt="">
+            </div>
+
+        </aside>
+        <main class="w-full md:w-3/4">
+            <div class="flex justify-between items-center mb-4">
+                <nav class="flex space-x-6">
+                    <a href="#" class="text-green-600 font-semibold border-b-2 border-green-600">All Plants</a>
+                    <a href="#" class="text-gray-600">New Arrivals</a>
+                </nav>
+                <select class="border p-2 rounded">
+                    <option>Default sorting</option>
+                </select>
+            </div>
+            <div class="flex flex-nowrap gap-6">
+                <div class="bg-white p-4 rounded-xl shadow w-1/3">
+                    <img src="./image/product (1).png" class="w-full rounded">
+                    <h3 class="mt-2 text-gray-700">Barberton Daisy</h3>
+                    <p class="text-green-600 font-semibold">$119.00</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow w-1/3 relative">
+                    <img src="./image/product (2).png" class="w-full rounded">
+                    <div class="absolute top-2 left-2 bg-green-600 text-white px-2 py-1 text-sm rounded">13% OFF</div>
+                    <h3 class="mt-2 text-gray-700">African Violet</h3>
+                    <p class="text-green-600 font-semibold">$199.00 <span
+                            class="text-gray-500 line-through">$229.00</span>
+                    </p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow w-1/3">
+                    <img src="./image/product (3).png" class="w-full rounded">
+                    <h3 class="mt-2 text-gray-700">Beach Spider Lily</h3>
+                    <p class="text-green-600 font-semibold">$129.00</p>
+                </div>z
+            </div>
+        </main>
+    </div>
+
+    <div class="container mx-auto flex flex-col items-center mt-6">
+        <div class="flex space-x-2">
+            <button class="px-4 py-2 bg-green-600 text-white rounded">1</button>
+            <button class="px-4 py-2 bg-gray-300 text-gray-700 rounded">2</button>
+            <button class="px-4 py-2 bg-gray-300 text-gray-700 rounded">3</button>
+        </div>
+    </div>
+    <div class="modal fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+        <div class="bg-white shadow-lg rounded-lg p-6 w-96 relative">
+            <button class="closeModal absolute top-3 right-3 text-gray-400 hover:text-gray-600">&times;</button>
+            <div class="flex gap-5 justify-center align-center text-center mb-4">
+                <h2 class="login text-green-600 font-semibold text-lg cursor-pointer">Login</h2>
+                <span class="text-gray-500">|</span>
+                <h2 class="register text-gray-600 font-semibold text-lg cursor-pointer">Register</h2>
+            </div>
+            <p class="text-gray-600 text-sm text-center mb-4">Enter your username and password to login.</p>
+            <div class="space-y-4">
+                <input type="email" placeholder="Email"
+                    class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                <div class="relative">
+                    <input type="password" placeholder="Password"
+                        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <span class="absolute right-3 top-2 text-gray-500 cursor-pointer">👁️</span>
+                </div>
+                <a href="#" class="text-green-500 text-sm block text-right">Forgot Password?</a>
+                <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalReg fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 hidden">
+        <div class="bg-white shadow-lg rounded-lg p-6 w-96 relative">
+            <button class="closeModal absolute top-3 right-3 text-gray-400 hover:text-gray-600">&times;</button>
+            <div class="flex gap-5 justify-center align-center text-center mb-4">
+                <h2 class="login text-gray-600 font-semibold text-lg cursor-pointer">Login</h2>
+                <span class="text-gray-500">|</span>
+                <h2 class="register text-green-600 font-semibold text-lg cursor-pointer">Register</h2>
+            </div>
+            <p class="text-gray-600 text-sm text-center mb-4">Enter your username and password to login.</p>
+            <div class="space-y-4">
+                <input type="text" placeholder="Username"
+                    class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                <input type="email" placeholder="Email"
+                    class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                <div class="relative">
+                    <input type="password" placeholder="Password"
+                        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <span class="absolute right-3 top-2 text-gray-500 cursor-pointer"><i
+                            class="fa-solid fa-eye"></i></span>
+                </div>
+                <div class="relative">
+                    <input type="password" placeholder="Confirm Password"
+                        class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <span class="absolute right-3 top-2 text-gray-500 cursor-pointer"><i
+                            class="fa-solid fa-eye"></i></span>
+                </div>
+                <a href="#" class="text-green-500 text-sm block text-right">Forgot Password?</a>
+                <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
